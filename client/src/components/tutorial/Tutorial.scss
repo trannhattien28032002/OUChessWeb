@@ -1,0 +1,154 @@
+.tutorial__container{
+    width: 100%;
+    background-color: #18191a;
+    
+    .tutorial__content {
+        display: flex;
+
+
+        .tutorial__board{
+            width: 70%;
+        }
+
+        .tutorial__conservation {
+            width: 30%;
+            height: 100vh;
+            background-color: #3b3b3b;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            .conservation__header {
+                width: 100%;
+                background-color: #303030;
+                padding: 10px;
+                color: #fff;
+                border-bottom: 1px solid #73ff57;
+                box-shadow: 5px 2px 10px #39ff11;
+            }
+
+            .conservation__content {
+                width: 95%;
+                margin: 10px 5px 10px 5px;
+                padding: 5px;
+                background-color: #757575;
+                color: #fff;
+                height: 70%;;
+                border: 1px solid #000;
+            }
+
+            .conservation__footer{
+                display: flex;
+                justify-content: center;
+                width: 100%;
+
+                div {
+                    text-align: center;
+                }
+            }
+
+            .quit {
+                margin: 20px 0 0 0;
+                color: #757575;
+
+                &:hover {
+                    cursor: pointer;
+                    color: #73ff57;
+                    border-bottom: 1px solid #73ff57;
+                    padding: 0 5px;
+                }
+            }
+
+
+        }
+    }
+}
+
+.lesson__container {
+    width: 100%;
+    height: 100%;
+    color: #fff;
+    margin: 20px 0 0 0;
+
+    .lesson__header {
+        font-size: 32px;
+        text-transform: uppercase;
+        letter-spacing: 10px;
+        text-align: center;
+        
+        &:before {
+            content: '─';
+            margin-right: 0.6em;
+            color: #fff;
+        }
+
+        &:after {
+            content: '─';
+            margin-left: 0.6em;
+            color: #fff;
+        }
+    }
+
+    .lesson__body {
+        display: flex;
+        margin-top: 40px;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+
+        .lesson__item {
+            width: 33%;
+	        font-size: 15px;
+	        padding: 0 4vw 4vw;
+	        border-right: 2px;
+	        border-left: 0;
+	        border-style: solid;
+            margin-top: 30px;
+	        border-image: linear-gradient(to bottom, #181818, #eee, #181818) 1 100%;
+
+            .lesson__item__background {
+                font-size: 4em;
+	            color: #555;
+	            margin-bottom: 0.6em;
+            }
+
+            .lesson__item__title {
+                font-size: 1.3em;
+                margin-bottom: 1em;
+                text-transform: uppercase;
+                letter-spacing: 4px;
+                line-height: 1em;
+                color: #f2f2f2;
+            }
+
+            .lesson__item__description{
+                font-style: italic;
+                color: #9f9f9f;
+                margin-bottom: 1.2em;
+                letter-spacing: 1px;
+            }
+
+            &:last-child{
+                border-right: 0;
+
+            }
+
+            &:not(:nth-child(1), :nth-child(2), :nth-child(3)){
+                margin-top: 80px !important;
+            }
+
+            &:hover {
+                cursor: pointer;
+
+                .lesson__item__background, .lesson__item__description{
+                    color: #d8d8d8;
+                }
+
+                .lesson__item__title{
+                    font-weight: bold;
+                }
+
+                transform: translate(0px, -10px);
+            }
+        }
+    }
+}

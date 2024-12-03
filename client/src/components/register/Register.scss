@@ -1,0 +1,110 @@
+.container {
+    background-color: rgb(49, 46, 43);
+    display: flex;
+    justify-content: center;
+}
+
+.register__container {
+    width: 50%;
+    margin: 10px auto;
+}
+
+.main {
+    background-color: #ffffff01;
+    width: 100%;
+    border-radius: 15px;
+    border: 1px solid #fff;
+    
+    .login-title {
+        font-size: 30px;
+        color: #fff;
+        font-weight: bold;
+        padding: 10px 0;
+        text-align: center;
+        margin: 5px 0;
+    }
+
+    .login-input {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        .btn__register {
+            width: 25%;
+            text-align: center;
+        }
+    }
+
+    .register-link{
+        text-align: center;
+        font-size: 18px;
+        padding: 20px;
+        margin: 10px;
+        font-weight: bold;
+
+        a {
+            color: #646464;
+            text-decoration: none;
+        
+            &:hover {
+              color: #dddddd;
+            }
+          }
+    }
+}
+
+.input__container {
+    width: 75%;
+    .textbox__container{
+        width: 100% !important;
+
+      input {
+        margin-bottom: 10px;
+        background-color: #d4d4d4;
+        color: #414141;
+        display: block;
+        width: 100% !important;
+
+        &:hover {
+          background-color: #a3d160;
+          border: 1px solid #adff32;
+          box-shadow: 0px 4px #5d9948 !important;
+        }
+
+        &:focus {
+          background-color: #d4d4d4;
+          border: none;
+          box-shadow: 0px 4px #666666 !important;
+        }
+      }
+    }
+
+    
+  }
+
+
+.register__process {
+    display: flex;
+    
+
+    .process {
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        padding: 20px;
+
+    }
+
+    .node {
+        width: 10%;
+        border: 1px solid;
+        margin: 2px 0;
+    }
+
+    .line {
+        width: 35%;
+        background-color: #fff;
+    }
+
+}

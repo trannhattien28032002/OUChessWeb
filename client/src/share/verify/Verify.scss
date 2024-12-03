@@ -1,0 +1,37 @@
+.verify-container {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    margin: 0 auto;
+    background-color: #ffffff1a;
+    flex-direction: column;
+    border: 1px solid #fff;
+    border-radius: 15px;
+}
+
+.input__container {
+    width: 75% !important;
+}
+
+.verify-title {
+    color: #fff;
+    font-size: 30px;
+    text-align: center;
+    padding: 10px;
+    font-weight: bold;
+}
+
+.verify-form {
+    display: flex;
+    flex-direction: column;
+}
+
+.verify-input {
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.verify__counter {
+    width: 20% !important;
+}

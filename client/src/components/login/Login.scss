@@ -1,0 +1,162 @@
+*{
+  box-sizing: border-box;
+}
+
+$angel: 0deg !default;
+
+@keyframes rotate {
+  to {
+    $angel: 360deg;
+  }
+}
+
+.error__block {
+  text-align: center;
+  padding: 10px 0;
+  background-color: #fd00009c;
+}
+
+.auth__container {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  background-color: #1f1f1f;
+
+  .model__container {
+    width: 100%;
+  }
+
+  .form__container {
+    width: 30%;
+    margin: 0 5px;
+    position: fixed;
+    right:0;
+  }
+}
+
+.login__container {
+  width: 100%;
+  margin: 10% 0;
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #3b3b3b83;
+  border-radius: 5px;
+  $angle: 0deg;
+  /* … */
+  border-image: linear-gradient($angel, green, yellow) 1;
+  animation: 10s rotate linear infinite;
+
+  .login__title {
+    font-size: 50px;
+    text-align: center;
+    font-weight: bold;
+    width: 90%;
+    margin: 20px 0;
+    color: #fff;
+  }
+
+  .input__container {
+    margin: 10px 0;
+    width: 80%;
+
+    .textbox__container{
+      input {
+        margin-bottom: 10px;
+        background-color: #d4d4d4;
+        color: #414141;
+  
+        &:hover {
+          background-color: #a3d160;
+          border: 1px solid #adff32;
+          box-shadow: 0px 4px #5d9948 !important;
+        }
+
+        &:focus {
+          background-color: #d4d4d4;
+          border: none;
+          box-shadow: 0px 4px #666666 !important;
+        }
+      }
+    }
+
+    
+  }
+
+  .login__feature {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin: 0 0 30px 0;
+    color: #646464;
+
+    #remember__me {
+      #rememberMe {
+        margin: 0 5px 0 0;
+      }
+    }
+
+    #forgot__password {
+      a{
+        color: #646464;
+
+        &:hover {
+          color: #dddddd;
+        }
+      }
+    }
+
+  }
+}
+
+.login__button {
+  button {
+    font-size: 20px;
+    font-weight: bold;
+  }
+}
+
+.register__link {
+  text-align: center;
+  font-size: 18px;
+  padding: 20px;
+  margin: 10px;
+  font-weight: bold;
+
+  a {
+    color: #646464;
+    
+
+    &:hover {
+      color: #dddddd;
+    }
+  }
+}
+
+.login__third__auth{
+    display: flex;
+    justify-content: center;
+    margin: 20px 0 0 0;
+
+    .third__auth__google {
+        width: 15%;
+        height: 50px;
+
+        img {
+          width: 100%;
+          height: 100%;
+        }
+
+        &:hover {
+          cursor: pointer;
+        }
+    }
+}
+
+
+.border-gradient {
+  border: 3px solid;
+  border-image-slice: 1;
+  border-image-source: linear-gradient(to left, #743ad5, #d53a9d);
+}
+

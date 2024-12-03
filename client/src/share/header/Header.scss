@@ -1,0 +1,65 @@
+.headers-container {
+    display: flex;
+    justify-content: flex-end;
+    background-color: #707070;
+    position: sticky;
+    top: 0;
+    width: 90%;
+    margin: 0 0 0 auto;
+    z-index: 0;
+}
+
+.headers-container .notify {
+    width: 10%;
+    padding: 5px;
+    margin: 5px 10px;
+    text-align: center;
+    background-color: #fff;
+    position: relative;
+}
+
+.headers-container .notify:hover {
+    cursor: pointer;
+    background-color: #575151;
+}
+
+
+
+.headers-container .notify .badge {
+    position: absolute;
+    background-color: red;
+    top: 100%;
+    right: 0;
+    padding: 1px 5px;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    color: white;
+}
+
+.request-list {
+    position: absolute;
+    right: 0;
+    top: 100%;
+    width: 400px;
+    max-height: 500px;
+    background-color: #747373;
+    overflow: auto;
+}
+
+.request-item {
+    margin: 10px 0;
+    border-bottom: 1px solid #8a8a8a96;
+}
+
+.request-item .request-choose {
+    display: flex;
+    justify-content: center;
+}
+
+.request-item .request-choose div {
+    width: 30%;
+    margin: 15px 5px;
+    padding: 10px 0;
+    font-size: 15px;
+}

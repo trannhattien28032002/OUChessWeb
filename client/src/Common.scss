@@ -1,0 +1,86 @@
+// Width: 10 20 30 .. 100 (%)
+@for $w from 1 through 10 {
+    $width: #{$w * 10};
+
+    .w-#{$width} {
+        width: #{$width + "%"};
+    }
+}
+
+// Padding: 5 10 15 .. 50 (px)
+@for $p from 1 through 10 {
+    $padding: #{$p * 5};
+
+    .p-#{$p} {
+        padding: #{$padding + "px" } !important;
+    }
+}
+
+.btn__style {
+    display: block !important;
+    padding: 10px;
+    margin: 5px;
+    border: 0;
+    border-radius: 5px;
+    box-shadow: 0px 4px #a7a7a7d0;
+    cursor: pointer;
+
+    &:hover {
+        color: rgba(255, 255, 255, 1);
+        box-shadow: 0 5px 15px #a7a7a7d0;
+        border-radius: 5px;
+    }
+}
+
+.btn__create {
+    background-color: #8de635 !important;
+    box-shadow: 0px 4px #5d9948 !important;
+    color: #fff;
+
+    &:hover {
+        color: rgba(255, 255, 255, 1);
+        box-shadow: 0 5px 15px #a3d160 !important;
+        border-radius: 5px;
+    }
+}
+
+.btn__confirm {
+    background-color: #4454e4 !important;
+    box-shadow: 0px 4px #2f3ba1 !important;
+    color: #fff;
+
+    &:hover {
+        color: rgba(255, 255, 255, 1);
+        box-shadow: 0 5px 15px #5f6fff !important;
+        border-radius: 5px;
+    }
+}
+
+.btn__close {
+    background-color: #ff5959;
+    box-shadow: 0px 4px #ff3b3b;
+    border-radius: 5px;
+    color: #fff;
+
+    &:hover {
+        background-color: #f77c7c;
+    }
+}
+
+.textbox__container {
+    .textbox__style {
+      width: 100%;
+      font-size: 16px;
+      padding: 10px 5px;
+      margin: 5px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      outline: none;
+    }
+}
+
+.link__style {
+    text-decoration: none;
+}
+
+

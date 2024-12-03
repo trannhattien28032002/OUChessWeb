@@ -1,0 +1,109 @@
+$line-width: 8px;
+$line-color: rgba(255,255,255,1);
+
+.mode__panel {
+    width: 50%;
+    background-color: #262421;
+    padding: 15px;
+    position: relative;
+    color: #fff;
+
+    .mode__header {
+        text-align: center;
+        font-weight: bold;
+        font-size: 25px;
+        margin: 0 0 10px 0;
+    }
+
+    .mode__selections {
+        display: flex;
+
+        .mode__item {
+            padding: 10px 25px;
+            width: 33%;
+            height: 30vh;
+            margin: 5px;
+            font-weight: bold;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+
+
+            div {
+                height: 20%;
+                margin: 5px;
+            }
+        }
+
+        .mode__item:hover {
+            cursor: pointer;
+            box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+        }
+
+        .focus__item {
+            box-shadow: rgba(0, 255, 98, 0.836) 0px 0px 0px 3px;        
+        }
+
+
+    }
+
+    .mode__footer {
+        display: flex;
+        justify-content: center;
+    }
+
+    .box__line {
+        position: absolute;
+        background: $line-color;
+        &--top,
+        &--bottom {
+          height: $line-width;
+          width: 100%;
+          &::before,
+          &::after {
+            content: "";
+            position: absolute;
+            width: $line-width;
+            height: $line-width;
+            background: $line-color;
+          }
+        }
+        &--top {
+            left:0;
+          top: -$line-width;
+          &::before {
+            left: 0;
+            bottom: -$line-width;      
+          }
+          &::after {
+            right: 0;
+            bottom: -$line-width;
+          }
+        }
+        &--bottom {
+          bottom: -$line-width;
+          left:0;
+          &::before {
+            left: 0;
+            top: -$line-width;      
+          }
+          &::after {
+            right: 0;
+            top: -$line-width;
+          }
+        }
+        &--left,
+        &--right {
+            top:0;
+          width: $line-width;
+          height: 100%;
+        }
+        &--left {
+          left: -$line-width;
+        }
+        &--right {
+          right: -$line-width;
+        }
+      }
+}
